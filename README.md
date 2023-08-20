@@ -4,6 +4,7 @@
  Your places should have a name (string), city (string), state (string), cuisines (string) and a pic (string)
 
 ## Tech Usage
+
 **CSS Framework:** Bootstrap
 
 **Stack:** MongoDB, Express, NodeJS
@@ -27,9 +28,8 @@
 | DELETE |	/ | places/:id/rant/:rantId	Delete a rant |
 
 ## Database
--------------------------------------------------------------------------------------------------------------------------------
-*places*
 
+**places**
 
 | Field |	Type |
 | ----------------- | ---------------------- |
@@ -40,7 +40,7 @@
 | cuisines |	String |
 | pic |	String |
 
-*rants*
+**rants**
 | Field |	Type |
 | -------------- | -------------------------------- |
 | _id |	Object ID |
@@ -49,9 +49,6 @@
 | rating |	Number |
 | comment |	String |
 | reviewer |	String |
-Planning
-User Stories
-TBD
 
 ## planning
 
@@ -59,7 +56,6 @@ TBD
 TBD
 
 ## Notes
--------------------------------------------------------------------------------------------------------------------------------
 - Auto-complete state dropdown
 * Update for comments
 + Aggregate rating for a place
@@ -70,5 +66,6 @@ Aggregate rating for a place
 Auto-complete state dropdown
 
 ## colors
-text:#1e0462
-background:#00ffa2
+- **text:** #000000
+* **background:** #23BD4A
++ **Highlight:** #E69935
