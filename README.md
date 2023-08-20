@@ -60,11 +60,6 @@ TBD
 * Update for comments
 + Aggregate rating for a place
 
-##
- Update for comments
-Aggregate rating for a place
-Auto-complete state dropdown
-
 ## colors
 - **text:** #000000
 * **background:** #23BD4A
