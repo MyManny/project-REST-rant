@@ -1,18 +1,18 @@
 # Project REST-Rant
 
-REST-Rant is an app where users can review restaurants.
-Your places should have a name (string), city (string), state (string), cuisines (string) and a pic (string)
-Tech Usage
-CSS Framework: Bootstrap
+ REST-Rant is an app where users can review restaurants.
+ Your places should have a name (string), city (string), state (string), cuisines (string) and a pic (string)
+## Tech Usage
+**CSS Framework:** Bootstrap
 
-Stack: MongoDB, Express, NodeJS
+**Stack:** MongoDB, Express, NodeJS
 
-Server-Side Rendering: JSX
+**Server-Side Rendering:** JSX
 
-Node Modules: method-override, dotenv, express-react-views
+**Node Modules:** method-override, dotenv, express-react-views
 
-Routes
-Method	Path	Purpose
+## Routes
+**Method	Path	Purpose**
 GET	/	The home page
 GET	/places	Index page listing all places
 GET	/places/new	New form for a place
@@ -26,7 +26,7 @@ DELETE	/places/:id/rant/:rantId	Delete a rant
 Database
 places
 
-Field	Type
+## Field	Type
 _id	Object ID
 name	String
 city	String
@@ -35,7 +35,7 @@ cuisines	String
 pic	String
 rants
 
-Field	Type
+## Field	Type
 _id	Object ID
 place_id	ref(places) Object_Id
 rant	Boolean
@@ -46,12 +46,16 @@ Planning
 User Stories
 TBD
 
-Wireframes
+### Wireframes
 TBD
 
-Notes
+## Notes
 Possible bonus ideas:
 
-Update for comments
+## Update for comments
 Aggregate rating for a place
 Auto-complete state dropdown
+
+## colors
+text:#1e0462
+background:#00ffa2
