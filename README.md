@@ -29,7 +29,7 @@
 
 ## Database
 
-**places**
+### **places**
 
 | Field |	Type |
 | ----------------- | ---------------------- |
@@ -40,7 +40,7 @@
 | cuisines |	String |
 | pic |	String |
 
-**rants**
+### **rants**
 | Field |	Type |
 | -------------- | -------------------------------- |
 | _id |	Object ID |
