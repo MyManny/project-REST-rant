@@ -3,3 +3,13 @@ h1 {
     color: cornflowerblue;
   }
   
+  img {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+  pic {
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
