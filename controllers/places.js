@@ -28,7 +28,6 @@ router.get('/:id', (req, res) => {
 })
 
 
-
 router.post('/', (req, res) => {
   db.Place.create(req.body)
   .then(() => {
@@ -39,9 +38,6 @@ router.post('/', (req, res) => {
       res.render('error404')
   })
 })
-
-
-
 
 
 router.get('/:id', (req, res) => {
