@@ -5,8 +5,18 @@ router.get('/new', (req, res) => {
   res.render('places/new')
 })
 router.get('/:id/edit', (req, res) => {
-  res.send('GET edit form stub')
+  let id = Number(req.params.id)
+  if (isNaN(id)) {
+      res.render('error404')
+  }
+  else if (!places[id]) {
+      res.render('error404')
+  }
+  else {
+    res.render('places/edit', { place: places[id] })
+  }
 })
+
 router.get('/:id', (req, res) => {
   db.Place.findById(req.params.id)
   .then(place => {
