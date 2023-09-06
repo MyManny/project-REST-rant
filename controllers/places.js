@@ -80,9 +80,20 @@ router.put('/:id', (req, res) => {
 router.put('/:id', (req, res) => {
   res.send('PUT /places/:id stub')
 })
-router.delete('/:id/rant/:rantId', (req, res) => {
-  res.send('GET /places/:id/rant/:rantId stub')
+router.delete('/:id', (req, res) => {
+  let id = Number(req.params.id)
+  if (isNaN(id)) {
+    res.render('error404')
+  }
+  else if (!places[id]) {
+    res.render('error404')
+  }
+  else {
+    places.splice(id, 1)
+    res.redirect('/places')
+  }
 })
+
 router.delete('/:id', (req, res) => {
   res.send('DELETE /places/:id stub')
 })
