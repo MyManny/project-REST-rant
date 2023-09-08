@@ -27,10 +27,6 @@ router.get('/:id', (req, res) => {
       res.render('error404')
   })
 })
-router.get('/:id', (req, res) => {
-  res.send('GET /places/:id stub')
-})
-
 router.get('/', (req, res) => {
   db.Place.find()
   .then((places) => {
@@ -56,10 +52,6 @@ router.post('/', (req, res) => {
   })
 })
 
-
-router.get('/:id', (req, res) => {
-  res.send('GET /places/:id stub')
-})
 router.put('/:id/edit', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
