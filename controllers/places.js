@@ -91,9 +91,6 @@ router.put('/:id', (req, res) => {
   }
 })
 
-router.put('/:id', (req, res) => {
-  res.send('PUT /places/:id stub')
-})
 router.delete('/:id', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
